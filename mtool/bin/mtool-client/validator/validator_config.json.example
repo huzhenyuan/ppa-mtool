@@ -1,0 +1,14 @@
+{
+  "nodePublicKey": "97d3656736ad596da8cc8f37b0dff7ef3b887a10753c0135f037927564c40bd2c4638331125e32629ff63c11e99c6acb582423eb23993c4b872fecb439ba98f5",
+  "nodeAddress": "http://192.168.16.161",
+  "nodePort": "16789",
+  "nodeRpcPort": "6789",
+  "nodeName": "liyf-test",
+  "externalId": "liyftestid",
+  "benefitAddress": "0x1c1BEe8AD86E4c5A43fB08D10a3ca1c118feBFA9",
+  "webSite": "http://www.baidu.com",
+  "details": "details",
+  "nodeVersion": "10",
+  "chainId": "100",
+  "blsPubKey": "xxxxxx"
+}

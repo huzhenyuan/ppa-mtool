@@ -1,0 +1,14 @@
+mtool (0.3.0-1) unstable; urgency=medium
+
+  Changes in 0.7.1  28 Aug 2019
+  * 撤销质押时根据治理状态确定继续锁定周期
+  * 治理增加提案状态管理
+  * 支持取消提案
+  * 创世区块锁仓计划，由原来的2个释放周期调整为8个释放周期
+  * 基金会分配比例参数调整
+  * 激励池奖励Staking和出块比例功能调整
+  * 正常撤销质押后锁定周期调整
+  * 参数联动调整，支持2组参数
+  * 治理模块gas & gasprice单独计算
+
+ -- platonnetwork <support@platon.network>  Thu, 18 Aug 2019 18:11:44 +0800

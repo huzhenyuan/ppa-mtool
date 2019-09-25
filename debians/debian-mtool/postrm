@@ -1,0 +1,8 @@
+#!/bin/sh
+# postrm script for platon-all
+#
+# see: dh_installdeb(1)
+
+rm -f ~/mtool
+
+exit 0

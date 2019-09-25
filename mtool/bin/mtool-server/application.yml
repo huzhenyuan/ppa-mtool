@@ -1,0 +1,53 @@
+server:
+  port: 7788
+spring:
+  profiles:
+    active: 
+  application:
+    name: mtool-server
+  datasource:
+    url: jdbc:mysql://localhost/mtool?useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      #init connection size
+      initialSize: 10
+      #max connection size
+      maxActive: 200
+      #min idle connection size
+      minIdle: 0
+      #max time to get connection
+      maxWait: 60000
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 33
+      validationQuery: 'SELECT 1'
+      testOnBorrow: false
+      testOnReturn: false
+      testWhileIdle: true
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 25200000
+      removeAbandoned: true
+      removeAbandonedTimeout: 1800
+      logAbandoned: true
+    platform: mysql
+    initialization-mode: always
+mybatis:
+  type-aliases-package: com.platon.mtool.server.model
+  mapper-locations: classpath:mapper/*.xml
+mapper:
+  mappers:
+    - tk.mybatis.mapper.common.Mapper
+  not-empty: false
+  identity: MYSQL
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+platon:
+  upload: data/upload/
+  settlePeriod: 300
+  increasePeriod: 15759500
+  blockRewardPercent: 0.7

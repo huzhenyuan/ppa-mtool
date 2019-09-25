@@ -1,0 +1,17 @@
+Source: mtool
+Section: x11
+Priority: optional
+Maintainer: platonnetwork <support@platon.network>
+Build-Depends: mysql-server
+Standards-Version: 3.9.6
+Homepage: https://github.com/PlatONnetwork
+#Vcs-Git: git://anonscm.debian.org/collab-maint/platon-all.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/platon-all.git
+
+Package: platon
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: MTool for PlatON
+    MTool.
+	PlatON node manage tool.
+

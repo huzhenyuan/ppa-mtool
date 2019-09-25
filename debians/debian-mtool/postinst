@@ -1,0 +1,11 @@
+#!/bin/sh
+# postinst script for platon
+#
+# see: dh_installdeb(1)
+
+
+chmod 755 /usr/bin/mtool/*
+
+ln -sf /usr/bin/mtool/            ~/mtool
+
+exit 0

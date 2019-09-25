@@ -1,0 +1,14 @@
+{
+  "staking": {
+    "rewardMethod": "PERCENT",
+    "feePercent": 0.1
+  },
+  "block": {
+    "rewardMethod": "PERCENT",
+    "feePercent": 0.1
+  },
+  "trade": {
+    "rewardMethod": "AVERAGE",
+    "feePercent": 0.2
+  }
+}
