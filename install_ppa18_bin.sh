@@ -46,7 +46,7 @@ debuild -S -sa -kDAFFDFD8
 # local build and test
 if [ $# -eq 4 ]; then
     echo "local build and test"
-#    dpkg-buildpackage -kDAFFDFD8
+   dpkg-buildpackage -kDAFFDFD8
 fi
 
 cd ../
